@@ -1,0 +1,44 @@
+<div class="sticky-top">
+  <div class="list-group">
+      <a
+        class="list-group-item list-group-item-action"
+        >All Categories A</a>
+        <a 
+        *ngFor="let c of categories$" 
+        [queryParams]="{ category: c.nam }"
+        class="list-group-item list-group-item-action"
+        >
+        {{ c.nam }}
+      </a>
+    </div>
+  </div>
+  <!-- routerLink="/" -->
+  <!-- [class.active]="!category" -->
+  <!-- routerLink="/" -->
+  <!-- class="list-group-item list-group-item-action" -->
+<!-- [class.active]="category === c.nam" -->
+
+
+<!-- <p>filtro component!</p>
+<div class="" >
+    <div class="filters" >
+        <ul id="filters">
+          <li>
+            <a class="" 
+            [class.active]="!category" 
+            routerLink="/"
+            >All Categories</a>
+          </li>
+          <li>
+            <a 
+            *ngFor="let c of categories$ " 
+            routerLink="/" 
+            [queryParams]="{ category: c.nam }" 
+            class="" 
+            [class.active]="category === c">
+            {{ c.nam }}
+          </a>
+        </li>
+      </ul>
+    </div>
+</div> -->

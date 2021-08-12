@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
-// declare var alb;
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-boot-card',
+  templateUrl: './boot-card.component.html',
+  styleUrls: ['./boot-card.component.css']
 })
-export class AppComponent {
-  title = 'MarkasnnyAngular';
+export class BootCardComponent implements OnInit {
   art={
     a:null,
     b:null,
@@ -38,17 +36,9 @@ export class AppComponent {
 {a:'s (3).jpg',	b:'s (3).jpg',	c:'sudadera',	d:30863,	e:21250}, 
 {a:'s (4).jpg',	b:'s (4).jpg',	c:'sudadera',	d:30866,	e:21252}, 
   ];
-  // articulos = [{codigo:1, descripcion:'papas', precio:10.55},
-  //              {codigo:2, descripcion:'manzanas', precio:12.10},
-  //              {codigo:3, descripcion:'melon', precio:52.30},
-  //              {codigo:4, descripcion:'cebollas', precio:17},
-  //              {codigo:5, descripcion:'calabaza', precio:20},
-  //             ];
+  constructor() { }
 
-  hayRegistros() {
-    return this.articulos.length>0;              
+  ngOnInit(): void {
   }
-  constructor() {
-    // console.log(alb);
-   }
+
 }

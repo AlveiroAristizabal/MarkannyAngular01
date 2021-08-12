@@ -1,0 +1,69 @@
+<!-- <app-filtro></app-filtro> -->
+<div class="container">
+    <div class="row">
+        <!-- <app-filtro></app-filtro> -->
+        <!-- produc ini -->
+        <div class="col-md-3 col-sm-6" *ngFor="let art of articulos" style="margin-top: 25px;">
+            <!-- <app-filtro></app-filtro> -->
+            <div class="product-grid">
+                <div class="product-image">
+                    <a  class="image">
+                        <img class="pic-1" src="../assets/images/{{art.a}}">
+                        <img class="pic-2" src="../assets/images/{{art.a}}">
+                    </a>
+                    <span class="product-sale-label">Nuevo!</span>
+                    <ul class="social">
+                        <li><a  data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                        <li><a  data-tip="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                    </ul>
+                    <div class="product-rating">
+                        <ul class="rating">
+                            <li class="fas fa-star"></li>
+                            <li class="fas fa-star"></li>
+                            <li class="fas fa-star"></li>
+                            <li class="far fa-star"></li>
+                            <li class="far fa-star"></li>
+                        </ul>
+                        <a class="add-to-cart" data-bs-toggle="modal" data-bs-target="#dialogo1"  style="cursor:pointer;" > COMPRAR </a>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a href="#">{{art.c}}</a></h3>
+                    <div class="price"><span>{{art.d}}</span>{{art.e}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal alv 04 INI -->
+<div class="container">
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dialogo1">Abrir ventana de
+        diálogo</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dialogo1">02</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dialogo1">03</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dialogo1">04</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dialogo1">05</button> -->
+
+    <div class="modal fade" id="dialogo1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- cabecera del diálogo -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Datos Para Comprar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- cuerpo del diálogo -->
+                <div class="modal-body">
+                    Te podemos atender en el Whatsapp 320 2301234 o en el correo markanny@gmail.com too en
+                    www.markanny.ga
+                    Cerrar.
+                </div>
+                <!-- pie del diálogo -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal alv 04 -->
